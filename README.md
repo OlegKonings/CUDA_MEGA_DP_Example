@@ -47,6 +47,7 @@ NOTE: All CUDA GPU times include all device memsets, host-device memory copies a
 Also have an alternate version which is slightly faster and returns the specific optimal allocations of colored marbles to respective boxes.   
 Email me for that version.
 
+___
 
 CPU= Intel i-7 3770K 3.5 Ghz with 3.9 Ghz target
 
@@ -55,6 +56,8 @@ GPU= Tesla K20c 5GB
 Windows 7 Ultimate x64
 
 Visual Studio 2010 x64
+
+___
 
 Would love to see a faster Python version, since that is the *best* language these days. Please contact me with the running time for the same sample sizes!
 
