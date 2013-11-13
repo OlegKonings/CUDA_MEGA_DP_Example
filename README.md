@@ -21,9 +21,6 @@ Problems of this type cannot be solved quickly using expensive software such as 
 
 But the CUDA model does work here and runs about 115-120 times faster than an 3.9 GHZ CPU implementation. Apx running time is (NumBoxes+1)*(2^(NumColors))*NumColors + (NumBoxes+1)*(2^(NumColors)) + NumBoxes*NumColors*NumBoxes.
 
-Also have an alternate version which is slightly faster and returns the specific optimal allocations of colored marbles to respective boxes. Email me for that version.
-
-
 ____
 <table>
 <tr>
@@ -33,7 +30,7 @@ ____
     <td>50</td><td>20</td><td>1,123,074,896</td><td> 11077 ms</td><td> 92 ms</td><td> 120.4x </td>
   </tr>
   <tr>
-    <td>50</td><td>22/td><td>4,919,973,592</td><td> 47566 ms</td><td> 405 ms</td><td> 19.2x</td>
+    <td>50</td><td>22</td><td>4,919,973,592</td><td> 47566 ms</td><td> 405 ms</td><td> 117.45x</td>
   </tr>
   <tr>
     <td>50</td><td>23</td><td>10,267,713,692</td><td> 98090 ms</td><td> 849 ms</td><td> 115.53x</td>
@@ -42,6 +39,10 @@ ____
 ___
 
 NOTE: All CUDA GPU times include all device memsets, host-device memory copies and device-host memory copies.
+
+Also have an alternate version which is slightly faster and returns the specific optimal allocations of colored marbles to respective boxes.   
+Email me for that version.
+
 
 CPU= Intel i-7 3770K 3.5 Ghz with 3.9 Ghz target
 
