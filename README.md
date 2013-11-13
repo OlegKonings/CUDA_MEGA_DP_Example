@@ -19,7 +19,9 @@ This is a useful problem, and this prototype can be applied to a variety of DP o
 
 Problems of this type cannot be solved quickly using expensive software such as MATLAB, and also are even more difficult to map to multi-core CPU implementations. 
 
-But the CUDA model does work here and runs about 115-120 times faster than an 3.9 GHZ CPU implementation. Apx running time is (NumBoxes+1)*(2^(NumColors))*NumColors + (NumBoxes+1)*(2^(NumColors)) + NumBoxes*NumColors*NumBoxes.
+But the CUDA model does work here and runs about 115-120 times faster than an 3.9 GHZ CPU implementation. Apx running time is (NumBoxes+1)x(2^(NumColors)) x NumColors + (NumBoxes+1)x(2^(NumColors)) + NumBoxes x NumColors x NumBoxes.   
+
+
 
 ____
 <table>
@@ -39,6 +41,8 @@ ____
 ___
 
 NOTE: All CUDA GPU times include all device memsets, host-device memory copies and device-host memory copies.
+  
+  
 
 Also have an alternate version which is slightly faster and returns the specific optimal allocations of colored marbles to respective boxes.   
 Email me for that version.
